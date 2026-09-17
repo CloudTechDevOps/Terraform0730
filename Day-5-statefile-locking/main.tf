@@ -13,7 +13,7 @@ resource "aws_subnet" "dev"{
 
 resource "aws_instance" "name" {
     ami                    = "ami-0e34b50e714a297f1" #Amazon 202
-    instance_type          = "t2.medium"
+    instance_type          = "t3.micro"
     subnet_id              = aws_subnet.dev.id
   
 }
