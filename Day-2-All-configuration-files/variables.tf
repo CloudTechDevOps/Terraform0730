@@ -21,3 +21,15 @@ variable "subnet_tag" {
   type        = string
   default     = "dev-subnet"
 }
+
+variable "ami" {
+  description = "AMI ID for the EC2 instance"
+  type        = string
+  default     = "ami-0e34b50e714a297f1"
+}
+
+variable "instance_type" {
+  description = "Instance type for the EC2 instance"
+  type        = string
+  default     = "t2.micro"
+}
